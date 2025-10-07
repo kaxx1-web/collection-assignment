@@ -1,0 +1,21 @@
+@import url(nav.css);
+
+h1{
+    font-size: 50;
+    color: cadetblue;
+}
+
+section{
+    padding:0px 50px 0px 0px;
+}
+
+nav{
+    grid-area: nav;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+
