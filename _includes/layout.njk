@@ -6,7 +6,7 @@
     <title>
       (% block title %)  {{ site.title }} (% endblock %)
     </title>
-    <link rel="stylesheet" href="{{ 'styles/styles.css' | prefixedURL }}">
+    <link rel="stylesheet" href="{{ 'styles/styles.css' | prefixedUrl }}">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             <ul>
                 {% for post in collections.post %}
                 <li>
-                    <a href="{{ post.url | prefixedURL }}">{{ post.data.title }}</a> –
+                    <a href="{{ post.url | prefixedUrl }}">{{ post.data.title }}</a> –
                     {{ post.date | readableDate }}
                 </li>
                 {% endfor %}
