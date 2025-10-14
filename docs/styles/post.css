@@ -1,0 +1,23 @@
+@import url(nav.css);
+
+h2
+{
+    font-family: 'inter', sans-serif;
+   color: royalblue;
+   font-size: 100px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.photo-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover; /* ensures images fill the grid without distortion */
+    border-radius: 25px;
+}

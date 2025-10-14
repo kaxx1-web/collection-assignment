@@ -6,25 +6,28 @@
     <title>
       (% block title %)  Blog (% endblock %)
     </title>
-    <link rel="stylesheet" href="/collection-assignment/styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    
+        <link rel="stylesheet" href="/styles/post.css">
+    
 </head>
 
 <body>
     <nav>
 	<ul>
 		
-			<li><a class="nav-item" href="/collection-assignment/">Home</a></li>
+			<li><a class="nav-item" href="/">Home</a></li>
 		
-			<li><a class="nav-item" href="/collection-assignment/about/">About</a></li>
-		
-			<li><a class="nav-item" href="/collection-assignment/contact/">Contact</a></li>
+			<li><a class="nav-item" href="/about/">About</a></li>
 		
 	</ul>
 </nav>
     <main>
         
-            <img class="hero-image" src="image.jpeg">
+            <!-- <img class="hero-image" src="/assets/c1.jpg"> -->
         
+
         <section class="page-content">
             
   
@@ -32,31 +35,47 @@
   
 
   <article>
-      <h2>My Special Post</h2>
-      <p><em>September 25, 2025</em></p>
-      <p>This is a special post!</p>
-
+      <h2>Ikea</h2>
+      <p><em>October 14, 2025</em></p>
+      <p>This is a special post!
+Your post content here...</p>
+<div class="photo-grid">
+    <img src="/assets/c1.jpg" alt="Photo 1">
+    <img src="/assets/c6.jpg" alt="Photo 2">
+    <img src="/assets/c3.jpg" alt="Photo 3">
+    <img src="/assets/c2.jpg" alt="Photo 4">
+    <img src="/assets/c4.jpg" alt="Photo 5">
+    <img src="/assets/c5.jpg" alt="Photo 6">
+</div>
   </article>
 
         </section>
 
+
         <section class = "latest-posts">
-            <h2>Latest Posts</h2>
+            <h3>Latest Posts</h3>
             <ul>
                 
                 <li>
-                    <a href="/collection-assignment/Posts/special post/">My Special Post</a> –
-                    September 25, 2025
+                    <a href="/Posts/first/">first post</a> –
+                    October 14, 2025
                 </li>
                 
                 <li>
-                    <a href="/collection-assignment/Posts/first/">first post</a> –
-                    October 1, 2025
+                    <a href="/Posts/second/">Second post</a> –
+                    October 14, 2025
                 </li>
                 
+            </ul>
+        </section>
+
+        <section class = "special">
+            <h3>Special Post</h3>
+            <ul>
+                
                 <li>
-                    <a href="/collection-assignment/Posts/second/">Second</a> –
-                    October 1, 2025
+                    <a href="/Posts/special post/">Ikea</a> –
+                    October 14, 2025
                 </li>
                 
             </ul>

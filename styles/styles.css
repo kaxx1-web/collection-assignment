@@ -3,7 +3,7 @@
 
 /* styling we want to include across our site  */
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif, sans-serif;
     height: 100vh; 
     display: grid; 
     grid-template-areas: 
@@ -12,13 +12,15 @@ body{
         "footer footer footer";
     grid-template-rows: 1fr 5fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: #ececec;
 }
 
 main{
     grid-area: content; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 2rem; /* Adds consistent spacing between sections */
 }
 
 section{
@@ -32,5 +34,3 @@ nav{
 footer{
     grid-area: footer; 
 }
-
-

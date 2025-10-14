@@ -7,24 +7,42 @@
       (% block title %)  {{ site.title }} (% endblock %)
     </title>
     <link rel="stylesheet" href="{{ '/styles/styles.css' | prefixedUrl }}">
+
+    {% if tags == "special" %}
+        <link rel="stylesheet" href="{{ '/styles/post.css' | prefixedUrl }}">
+    {% endif %}
 </head>
 
 <body>
     {% include "nav.njk" %}
     <main>
         {% if heroImage %}
-            <img class="hero-image" src="image.jpeg">
+            <!-- <img class="hero-image" src="/assets/c1.jpg"> -->
         {% endif %}
+
         <section class="page-content">
             {% block content %}
             {{ content | safe }}
             {% endblock %}
         </section>
 
+
         <section class = "latest-posts">
-            <h2>Latest Posts</h2>
+            <h3>Latest Posts</h3>
             <ul>
                 {% for post in collections.post %}
+                <li>
+                    <a href="{{ post.url | prefixedUrl }}">{{ post.data.title }}</a> –
+                    {{ post.date | readableDate }}
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <section class = "special">
+            <h3>Special Post</h3>
+            <ul>
+                {% for post in collections.special %}
                 <li>
                     <a href="{{ post.url | prefixedUrl }}">{{ post.data.title }}</a> –
                     {{ post.date | readableDate }}

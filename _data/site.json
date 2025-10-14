@@ -2,7 +2,6 @@
     "title": "Blog",
     "nav": [
         { "name": "Home", "url": "/" },
-        { "name": "About", "url": "/about/" },
-        { "name": "Contact", "url": "/contact/" }
+        { "name": "About", "url": "/about/" }
     ]    
 }
