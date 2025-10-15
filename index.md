@@ -2,6 +2,7 @@
 title: Home
 layout: layout.njk
 heroImage: true
+tags: special
 ---
 
 # Welcome to my blog!

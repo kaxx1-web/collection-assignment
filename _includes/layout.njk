@@ -8,8 +8,8 @@
     </title>
     <link rel="stylesheet" href="{{ '/styles/styles.css' | prefixedUrl }}">
 
-    {% if tags == "special" %}
-        <link rel="stylesheet" href="{{ '/styles/post.css' | prefixedUrl }}">
+    {% if tags == "special" or page.url == "/" %}
+    <link rel="stylesheet" href="{{ '/styles/post.css' | prefixedUrl }}">
     {% endif %}
 </head>
 
