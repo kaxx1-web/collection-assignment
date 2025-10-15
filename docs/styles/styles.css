@@ -99,6 +99,7 @@ footer{
     height: 300px;
     object-fit: cover;
     border: 5px solid #ffb6c1;
+    object-position: center top;
 }
 
 .yum3 {
