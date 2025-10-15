@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf docs",
     "build": "npm run clean && ELEVENTY_ENV=production npx @11ty/eleventy",
