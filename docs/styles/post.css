@@ -1,5 +1,9 @@
 @import url(nav.css);
 
+p{
+    text-align:center
+}
+
 h2
 {
     font-family: 'inter', sans-serif;
@@ -19,5 +23,4 @@ h2
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover; /* ensures images fill the grid without distortion */
-    border-radius: 25px;
 }

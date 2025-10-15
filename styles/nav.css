@@ -1,11 +1,12 @@
 nav ul{
-    display:flex ;
+    display: flex;
     flex-direction: row;
     width: 100vw;
     text-decoration: none;
     justify-content: center;
     list-style-type: none;
-
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
 .nav-item{

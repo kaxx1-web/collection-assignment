@@ -31,6 +31,45 @@ nav{
     grid-area: nav;
 }
 
+.page-content {
+    display: grid;
+    
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+p{
+    text-align:center
+}
+
+h2
+{
+    font-family: 'inter', sans-serif;
+   color: royalblue;
+   font-size: 100px;
+}
+.photo {
+    grid-column: 2; /* Photos in middle column */
+    grid-row: 1; /* Start at top */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    border: 8px solid #77a3e9; 
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.photo img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
 footer{
     grid-area: footer; 
 }
+
