@@ -42,10 +42,12 @@
             <h3>Special Post</h3>
             <ul>
                 {% for post in collections.special %}
-                <li>
-                    <a href="{{ post.url | prefixedUrl }}">{{ post.data.title }}</a> –
-                    {{ post.date | readableDate }}
-                </li>
+                    {% if post.url != "/" %}
+                    <li>
+                        <a href="{{ post.url | prefixedUrl }}">{{ post.data.title }}</a> –
+                        {{ post.date | readableDate }}
+                    </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </section>
