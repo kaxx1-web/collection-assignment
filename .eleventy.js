@@ -25,7 +25,8 @@ module.exports = function(eleventyConfig) {
 
 	//tells eleventy to output to docs instead of _site
   return {
-    dir: { input: ".", output: "docs" },
+    pathPrefix: "/collection-assignment/",
+    dir: { input: ".", output: "_site"},
     htmlTemplateEngine: "njk",
     templateFormats: ["html", "njk", "md"]
   };
