@@ -11,7 +11,7 @@ heroImage: true
 Sweet fruit flavours of Grapefruit, Lemon, and Blood Orange
 
 <div class="yum">
-    <img src="/assets/nom.jpg" alt="gummie">
-    <img class="yum2"src="/assets/nom.jpg" alt="candy">
-     <img class="yum3"src="/assets/nom.jpg" alt="haribo">
+    <img src="{{ '/assets/nom.jpg' | prefixedUrl }}" alt="gummie">
+    <img class="yum2"src="{{ '/assets/nom.jpg' | prefixedUrl }}" alt="candy">
+     <img class="yum3"src="{{ '/assets/nom.jpg' | prefixedUrl }}" alt="haribo">
 </div>

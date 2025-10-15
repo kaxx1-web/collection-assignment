@@ -10,7 +10,7 @@ Thanks.
 
 
 <div class="pfp">
-    <img src="/assets/about.JPG" alt="profile">
+    <img src="{{ '/assets/about.JPG' | prefixedUrl }}" alt="profile">
     <p> hi so this is just a pfp holder yay!</p>
 </div>
 

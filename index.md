@@ -10,7 +10,7 @@ heroImage: true
 
 
 <div class="banner">
-    <img src="/assets/banner.jpg" alt="banner">
+    <img src="{{ '/assets/banner.jpg' | prefixedUrl }}" alt="banner">
     <p> hi am just a cover design, i suppose.</p>
 </div>
 
