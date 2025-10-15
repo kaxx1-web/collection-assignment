@@ -7,7 +7,9 @@ layout: post.njk
 heroImage: true
 ---
 This is a special post!
-Your post content here...
+ikea House Warming pop up located
+
+@ 31 E 17TH STREET, NY, NY.
 
 <div class="photo-grid">
     <img src="/assets/c1.jpg" alt="Photo 1">
