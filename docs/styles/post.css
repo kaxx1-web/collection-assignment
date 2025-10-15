@@ -22,5 +22,5 @@ h2
 .photo-grid img {
     width: 100%;
     aspect-ratio: 1 / 1;
-    object-fit: cover; /* ensures images fill the grid without distortion */
+    object-fit: cover; 
 }
