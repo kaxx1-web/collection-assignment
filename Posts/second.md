@@ -1,16 +1,17 @@
 ---
-title: hmm
+title: Hmm..
 date: 2025-10-14
 layout: post.njk
 tags: post
 heroImage: true
 ---
 
-This is a page for my second post.
+<h4>Haribo vulcano z!ng.</h4>
 
-<div class="walk">
-    <img src="/assets/s1.JPG" alt="whee">
-    <img src="/assets/s2.jpg" alt="image 1">
-    <img src="/assets/s3.jpg" alt="image 2">
-    <img src="/assets/s4.jpg" alt="image 3">
+Sweet fruit flavours of Grapefruit, Lemon, and Blood Orange
+
+<div class="yum">
+    <img src="/assets/nom.jpg" alt="gummie">
+    <img class="yum2"src="/assets/nom.jpg" alt="candy">
+     <img class="yum3"src="/assets/nom.jpg" alt="haribo">
 </div>

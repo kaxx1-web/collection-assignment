@@ -10,7 +10,7 @@ body{
         "nav nav nav"
         "content content content"
         "footer footer footer";
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #ececec;
 }
@@ -48,10 +48,17 @@ h2
     font-family: 'inter', sans-serif;
    color: royalblue;
    font-size: 100px;
+   text-align:center;
 }
+
+h4{
+    font-family: 'inter', sans-serif;
+    text-align:center;
+    color: rgb(225, 65, 65);
+   font-size: 20px;
+}
+
 .photo {
-    grid-column: 2; /* Photos in middle column */
-    grid-row: 1; /* Start at top */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -60,32 +67,49 @@ h2
     border: 8px solid #77a3e9; 
     background-color: aliceblue;
     border-radius: 8px;
+    max-height: 60vh; /* Limits the total height of the photo container */
+    overflow-y: auto; /* Adds scrollbar if needed */
 }
 
 .photo img {
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
+    min-height: 150px; /* Sets a minimum size for each image */
+    max-height: 200px; /* Sets a maximum size for each image */
 }
 
 footer{
     grid-area: footer; 
 }
 
-.walk {
+.yum {
     grid-column: 2; /* Photos in middle column */
     grid-row: 1; /* Start at top */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
     gap: 1rem;
     padding: 2rem;
-    border: 8px solid #77a3e9; 
-    background-color: aliceblue;
+    border: 8px solid #d9e7ff; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
 }
 
-.walk img {
+.yum2 {
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #ffb6c1;
+}
+
+.yum3 {
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #39c7e3; 
+    object-position: center bottom;
+}
+
+.yum img {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 /1;
     object-fit: cover;
 }

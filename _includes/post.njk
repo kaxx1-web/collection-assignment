@@ -5,8 +5,8 @@
     <p> featured post! </p>
   {% endif %}
 
+  <h2>{{ title }}</h2>
   <article>
-      <h2>{{ title }}</h2>
       <p><em>{{ date | readableDate }}</em></p>
       {{ content | safe }}
   </article>
